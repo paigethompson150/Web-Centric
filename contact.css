@@ -1,0 +1,14 @@
+/* Hide the contact form initially */
+.hidden {
+    display: none;
+  }
+  
+  /* Styles for the contact icon */
+  #contact-icon {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+  }
+  
