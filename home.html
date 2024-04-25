@@ -15,17 +15,30 @@
 <body>
   <header>
     <div id="header_title">
+      <div id="header_title">
+        <marquee behavior="scroll" direction="left">Now Playing: Song Title by Artist</marquee>
+        <audio controls autoplay loop>
+          <source src="EyeoftheTiger.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      
       <p>Scrolling music title</p>
     </div>
     <div id="header_about_me">
       <!--Angie-->
-      <img
-        src="https://i5.walmartimages.com/asr/eb09c51a-c790-4b88-95b2-ae4a7bb54e2d.4722feeadf86d22d451bfd9e5827c32c.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+      <a href="personalPages/a.html">
+      <img src="https://i5.walmartimages.com/asr/eb09c51a-c790-4b88-95b2-ae4a7bb54e2d.4722feeadf86d22d451bfd9e5827c32c.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
         alt="">
+      </a>
       <!--Megan FIX ME-->
+      <a href ="personalPages/megan.html">
       <img src="images/megmac.png" alt="developer headshot">
+      </a>
       <!--Paige-->
+      <a href = "personalPages/paige.html">
       <img src="images/paige.png" alt="">
+      </a>
     </div>
   </header>
 
@@ -48,8 +61,7 @@
               <p><b>Use Case:</b> Almost all modern websites use JavaScript to add functionality. Can run in the browser
                 and server-side enviroments like Node.js</p>
 
-              <p><b>In this project:</b> JavaScript was used for creating this very carasoul and implemented in each
-                game (2048, Flappy Bird, RockBand)</p>
+              <p><b>In this project:</b> Each game (2048, Flappy Bird, RockBand) uses JS to become responsive!</p>
             </div>
           </li>
           <li class="s-item s-item-2">
@@ -75,7 +87,7 @@
               <p><b>Purpose:</b> thing </p>
               <p><b>Use Case:</b> thingie</p>
 
-              <p><b>In this project:</b> CSS was used to style each web page, the Z-index to create ___INSERT HERE__
+              <p><b>In this project:</b> CSS was used to create the design and behavior of this carousel! Each web page uses CSS, and we used the <b>Z-Index</b> to create ___INSERT HERE__
               </p>
             </div>
           </li>
@@ -97,9 +109,8 @@
 
     <!-- Games -->
     <div class="games">
-      <a class="game-link" href="RockBand/index.html">
         <!-- Flappy Bird-->
-        <a class="game-link" href="RockBand/index.html">
+        <a class="game-link" href="">
           <div class="game">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6NsykkjTlhNFfqZaGSVtAzu97eMsFC7uaONi-N9oFkQ&s" alt="photo of flappy bird game">
             <img class="controller" src="images/controller.jpeg" alt="video game controller">
@@ -121,7 +132,7 @@
         </div>
       </a>
       <!-- RockBand-->
-      <a class="game-link" href="RockBand/index.html">
+      <a class="game-link" href="RockBand/rockband.html">
         <div class="game" id="rockband">
           <img src="images/rockband.png" alt="photo of rockband game">
           <img class="controller" src="images/controller.jpeg" alt="video game controller">
