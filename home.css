@@ -1,15 +1,13 @@
 body {
   background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMjgta3JvaXJqbW0uanBn.jpg");
   background-repeat: no-repeat;
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Header */
 header {
   text-align: center;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
@@ -33,6 +31,7 @@ header {
   transition: transform 0.3s ease;
    will-change: transform;
 }
+
   /* Shake Image on Hover*/
 #header_about_me img:hover {
 	transform: scale(1.1);
@@ -116,13 +115,14 @@ body {
   background-size: cover;
 }
 .s-wrap .s-item-1 {
-  background-image: url("https://t4.ftcdn.net/jpg/04/21/44/29/360_F_421442912_e9dARIDF7CnBKKcB1Ooy0aNcEOJ13eVY.jpg");
+  background-image: url("images/gradient1.png");
 }
 .s-wrap .s-item-2 {
-  background-image: url("https://t4.ftcdn.net/jpg/04/21/44/29/360_F_421442912_e9dARIDF7CnBKKcB1Ooy0aNcEOJ13eVY.jpg");
+  background-image: url("images/gradient2.png");
 }
+
 .s-wrap .s-item-3 {
-  background-image: url("https://t4.ftcdn.net/jpg/04/21/44/29/360_F_421442912_e9dARIDF7CnBKKcB1Ooy0aNcEOJ13eVY.jpg");
+  background-image: url("images/gradient3.png");
 }
 
 .s-type-1 .s-control {
@@ -136,11 +136,18 @@ body {
 .s-text {
   z-index: 99;
   position: absolute;
-  font-size: 18px;
+  font-size: 20px;
   top: 5%;
 	padding-left: 50px;
 	padding-right: 50px;
   width: 18%;
+}
+.s-text b {
+  font-weight: 999;
+}
+
+.s-text h2 {
+  font-size: 35px;
 }
 .s-type-1 .s-control > label[class^="s-c-"] {
   display: inline-block;

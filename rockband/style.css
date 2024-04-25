@@ -3,6 +3,38 @@
   text-align: center;
 }
 
+body {
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMjgta3JvaXJqbW0uanBn.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  text-align: center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+}
+
+#header_title {
+  padding: 15px;
+  padding-bottom: 80px;
+}
+
+#header_title p {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.back-arrow {
+  max-height: 15px;
+}
+
+/* Rockband */
+
 .band-frame {
   background-image: url("https://static.vecteezy.com/system/resources/previews/013/365/549/large_2x/light-brick-wall-close-up-image-row-brick-and-cement-block-background-and-texture-free-photo.jpg");
   background-size: 100% auto;
@@ -78,5 +110,4 @@
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
 
