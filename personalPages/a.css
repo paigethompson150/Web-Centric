@@ -44,6 +44,9 @@ header {
   align-items: center;
   border-left: 2px solid purple;
 }
+.container.expanded {
+  height: 800px; /* Adjust the height as needed */
+}
 
 #right, #mid, #left {
   align-items: center;

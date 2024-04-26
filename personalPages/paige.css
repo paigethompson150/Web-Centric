@@ -1,5 +1,5 @@
 #pro-pic {
-  max-width: 150px;
+  max-width: 200px;
   border-radius: 25px;
 }
 
@@ -59,6 +59,10 @@ header {
   flex-direction: column;
   padding-top: 40px;
   padding: 10px;
+}
+
+#right h1, #mid h1, #left h1 {
+  padding-top: 30px;
 }
 
 
