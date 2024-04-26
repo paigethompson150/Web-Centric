@@ -44,13 +44,15 @@ header {
   background: white;
   display: grid;
   grid-template-columns: 30% 40% 30%;
-  grid-auto-flow: column
+  grid-auto-flow: column;
+  overflow: hidden;
 }
 
 .container > div {
   display: flex;
   align-items: center;
   border-left: 2px solid purple;
+  overflow-y: scroll;
 }
 
 #right, #mid, #left {
