@@ -1,3 +1,5 @@
+
+
 // Background scrolling speed 
 let move_speed = 3; 
     
@@ -31,7 +33,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key == 'Enter') { 
       if (game_state != 'Play') { 
         // Reset game state and variables for restart
-        document.querySelectorAll('.the_pipe').forEach((e) => { 
+        document.querySelectorAll('.pipe_sprite').forEach((e) => { 
           e.remove(); 
         }); 
         star.style.top = '40vh'; 
@@ -58,27 +60,27 @@ function play() {
     if (game_state != 'Play') return; 
       
     // Getting reference to all the pipe elements 
-    let the_pipe = document.querySelectorAll('.the_pipe'); 
-    the_pipe.forEach((element) => { 
+    let pipe_sprite = document.querySelectorAll('.pipe_sprite'); 
+    pipe_sprite.forEach((element) => { 
         
-      let the_pipe_props = element.getBoundingClientRect(); 
+      let pipe_sprite_props = element.getBoundingClientRect(); 
       star_props = star.getBoundingClientRect(); 
         
       // Delete the pipes if they have moved out 
       // of the screen hence saving memory 
-      if (the_pipe_props.right <= 0) { 
+      if (pipe_sprite_props.right <= 0) { 
         element.remove(); 
       } else { 
         // Collision detection with star and pipes 
         if ( 
-          star_props.left < the_pipe_props.left + 
-          the_pipe_props.width && 
+          star_props.left < pipe_sprite_props.left + 
+          pipe_sprite_props.width && 
           star_props.left + 
-          star_props.width > the_pipe_props.left && 
-          star_props.top < the_pipe_props.top + 
-          the_pipe_props.height && 
+          star_props.width > pipe_sprite_props.left && 
+          star_props.top < pipe_sprite_props.top + 
+          pipe_sprite_props.height && 
           star_props.top + 
-          star_props.height > the_pipe_props.top 
+          star_props.height > pipe_sprite_props.top 
         ) { 
             
           // Change game state and end the game 
@@ -95,15 +97,15 @@ function play() {
           // Increase the score if player 
           // has the successfully dodged the  
           if ( 
-            the_pipe_props.right < star_props.left && 
-            the_pipe_props.right +  
+            pipe_sprite_props.right < star_props.left && 
+            pipe_sprite_props.right +  
             move_speed >= star_props.left && 
             element.increase_score == '1'
           ) { 
             score_val.innerHTML = +score_val.innerHTML + 1; 
           } 
           element.style.left =  
-            the_pipe_props.left - move_speed + 'px'; 
+            pipe_sprite_props.left - move_speed + 'px'; 
         } 
       } 
     }); 
@@ -157,21 +159,21 @@ function play() {
         
       // Calculate random position of pipes on y axis 
       let pipe_posi = Math.floor(Math.random() * 43) + 8; 
-      let the_pipe_inv = document.createElement('div'); 
-      the_pipe_inv.className = 'the_pipe'; 
-      the_pipe_inv.style.top = pipe_posi - 70 + 'vh'; 
-      the_pipe_inv.style.left = '100vw'; 
+      let pipe_sprite_inv = document.createElement('div'); 
+      pipe_sprite_inv.className = 'pipe_sprite'; 
+      pipe_sprite_inv.style.top = pipe_posi - 70 + 'vh'; 
+      pipe_sprite_inv.style.left = '100vw'; 
         
       // Append the created pipe element in DOM 
-      document.body.appendChild(the_pipe_inv); 
-      let the_pipe = document.createElement('div'); 
-      the_pipe.className = 'the_pipe'; 
-      the_pipe.style.top = pipe_posi + pipe_gap + 'vh'; 
-      the_pipe.style.left = '100vw'; 
-      the_pipe.increase_score = '1'; 
+      document.body.appendChild(pipe_sprite_inv); 
+      let pipe_sprite = document.createElement('div'); 
+      pipe_sprite.className = 'pipe_sprite'; 
+      pipe_sprite.style.top = pipe_posi + pipe_gap + 'vh'; 
+      pipe_sprite.style.left = '100vw'; 
+      pipe_sprite.increase_score = '1'; 
         
       // Append the created pipe element in DOM 
-      document.body.appendChild(the_pipe); 
+      document.body.appendChild(pipe_sprite); 
     } 
     pipe_seperation++; 
     requestAnimationFrame(create_pipe); 
