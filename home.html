@@ -14,30 +14,29 @@
 
 <body>
   <header>
-    <div id="header_title">
-      <div id="header_title">
-        <marquee behavior="scroll" direction="left">Now Playing: Song Title by Artist</marquee>
-        <audio controls autoplay loop>
-          <source src="EyeoftheTiger.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      
-      <p>Scrolling music title</p>
+    <!--Scrolling Music Title and Audio Player -->
+    <div id = "music-title-container">
+      <div class="scrolling-text">Now Playing: Song Title by Artist</div>
+      <audio controls autoplay loop>
+        <source src="EyeoftheTiger.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
+
+      <!-- About Me Section with Links to Personal Pages -->
     <div id="header_about_me">
       <!--Angie-->
       <a href="personalPages/a.html">
       <img src="https://i5.walmartimages.com/asr/eb09c51a-c790-4b88-95b2-ae4a7bb54e2d.4722feeadf86d22d451bfd9e5827c32c.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-        alt="">
+        alt="developer angie profile picture">
       </a>
       <!--Megan FIX ME-->
       <a href ="personalPages/megan.html">
-      <img src="images/megmac.png" alt="developer headshot">
+      <img src="images/megmac.png" alt="developer megan profile picture">
       </a>
       <!--Paige-->
       <a href = "personalPages/paige.html">
-      <img src="images/paige.png" alt="">
+      <img src="images/paige.png" alt="developer paige profile picture">
       </a>
     </div>
   </header>
@@ -77,17 +76,16 @@
               <p>jQuery useage has declined with the rise of modern frameworks like React, Angular, and Vue.js</p>
 
               <p><b>In this project:</b> A jQuery plug-in was used for validating the contact information form and AJAX
-                sends it as an email.</p>
+                sends it as an email. jQuery was also used for the the music and allowing it to scroll and stop on hover.  </p>
             </div>
           </li>
           <li class="s-item s-item-3">
             <div class="s-text">
               <h2>CSS</h2>
-              <p><b>What is it:</b> Description</p>
-              <p><b>Purpose:</b> thing </p>
-              <p><b>Use Case:</b> thingie</p>
-
-              <p><b>In this project:</b> CSS was used to create the design and behavior of this carousel! Each web page uses CSS, and we used the <b>Z-Index</b> to create ___INSERT HERE__
+              <p><b>What is it: CSS is a language that lets us control how we present our documents to users!</b> Description</p>
+              <p><b>Purpose:</b> Style and layout our web-pages, and control different displays for different devices or user capabilities. </p>
+              <p><b>Use Case:</b> Virtually all modern web-pages use CSS! </p>
+              <p><b>In this project:</b> CSS was used to create the design and behavior of this carousel! Each web page uses CSS, and we used the <b>Z-Index</b> property in the FlappyBird game to control the stacking order of elements!
               </p>
             </div>
           </li>

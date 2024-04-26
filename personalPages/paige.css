@@ -12,21 +12,29 @@ body {
   background-size: cover;
 }
 
+/* Header */
 header {
-  text-align: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
 }
 
 #header_title {
   padding: 15px;
+  padding-bottom: 80px;
 }
 
-#header_title p {
+#header_title img {
+  max-height: 30px;
   position: absolute;
-  top: 10px;
+  top: 40px;
   left: 20px;
+  transition: height 2s;
 }
 
+#header_title img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* About Me */
 .container {
   border: 2px solid rgb(175, 87, 195);
   border-radius: 12px;
@@ -49,7 +57,7 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  padding-top: 40px;
   padding: 10px;
 }
 
@@ -60,7 +68,7 @@ header {
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.6;

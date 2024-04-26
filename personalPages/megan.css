@@ -1,0 +1,88 @@
+#pro-pic {
+    max-width: 150px;
+    border-radius: 25px;
+  }
+  
+  body {
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMjgta3JvaXJqbW0uanBn.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Header */
+  header {
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+  }
+  
+  #header_title {
+    padding: 15px;
+    padding-bottom: 80px;
+  }
+  
+  #header_title img {
+    max-height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    transition: height 2s;
+  }
+  
+  #header_title img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About Me */
+  .container {
+    border: 2px solid rgb(175, 87, 195);
+    border-radius: 12px;
+    margin: 50px;
+    width: calc(100vw - 100px); /* Adjusted width */
+    height: 600px;
+    background: white;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-auto-flow: column
+  }
+  
+  .container > div {
+    display: flex;
+    align-items: center;
+    border-left: 2px solid purple;
+  }
+  
+  #right, #mid, #left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding: 10px;
+  }
+  
+  
+  #resume, #linkedin, #personalsite,
+  #contact-icon {
+    margin-bottom: 20px; /* Add some spacing between the elements */
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    background: #eee;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+      cursor: pointer;
+      outline: none;
+  }
+  
+  

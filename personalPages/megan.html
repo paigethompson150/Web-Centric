@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="home.js"></script>
+    <script src="cursor.js"></script>
+  <title>Student Page</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_title">
+          <p>Scrolling music title</p>
+        </div>
+        <div id="header_about_me">
+          <!--Angie-->
+          <img src="IMG_4438.HEIC" alt="">
+        </div>
+      </header>
+      <main>
+        <section class="bio" id="bio">
+            <div class="container">
+                <div id="left">
+                    <h3> Connect </h3>
+                    <h5> Resume </h5>
+                    <div id="resume">
+                            <a href="UX_UI_MeganMcNamra_Resume.docx" target="_blank"> Download</a></li>
+                    </div>
+                    <h5> Socials </h5>
+                    <div id="linkedin">
+                        <a href="www.linkedin.com/in/megan-mcnamara-694358209" target="_blank"> LinkedIn</a>
+                    </div>
+                    <h5> Contact Me! </h5>
+                    <text> +1 (407)-913-2401</text>
+                    <text>mcnamarm@simmons.edu </text>
+                        <!-- Contact icon -->
+                        <div id="contact-icon">Contact Us</div>
+                      
+                        <!-- Contact form (initially hidden) -->
+                        <div id="contact-form" class="hidden">
+                            <form id="contact-form" action="/submit-contact" method="POST">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                                
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                                
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script src="contact.js"></script>
+                </div>
+                <!-- End of left -->
+                <div id="mid"> 
+                    <h1> About me </h3>
+                </div>
+                <div id="right">
+                    <h1> Fun Facts </h1>
+                    <ul>
+                        <li> I enjoy graphic design and front end web-dev!</li>
+                        <li> I am left-handed</li>
+                        <li> My cat's name is Dilaila. She is almost 13 and is an Aries</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+</body>
+  
+
+</html>

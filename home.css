@@ -22,23 +22,55 @@ header {
   top: 10px;
   left: 20px;
 }
-/*Scrolling Music Title */
-#header_title {
-  background-color: #f0f0f0; /* Adjust color as needed */
-  padding: 10px;
+
+#header_about_me img {
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-#header_title marquee {
-  font-size: 20px;
-  color: #333; /* Adjust text color as needed */
+#header_about_me img:hover {
+  transform: scale(1.1);
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Scrolling Music title in top left corner*/
+/* Existing CSS for the body and header remains unchanged */
+
+/* Updated Scrolling Music Title Styles */
+#music-title-container {
+  position: fixed; /* Fixed position to keep it visible */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  color: white;
+  padding: 10px 20px; /* Added horizontal padding */
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 audio {
-  width: 100%; /* Full-width audio player */
-  margin-top: 10px; /* Spacing between the marquee and the player */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  position: absolute;
+  left: 100%;
+  animation: scroll-text 20s linear infinite;
+}
+
+@keyframes scroll-text {
+  from { left: 100%; }
+  to { left: -100%; }
 }
 
 
+/*Profile picture */
 #header_about_me img {
   width: 150px;
   border-radius: 50%;
@@ -70,6 +102,7 @@ audio {
   
 
 #header_about_me {
+  padding-top: 70px;
   padding-bottom: 40px;
 }
 
@@ -257,6 +290,10 @@ body {
   display: block;
 }
 
+.s-nav-1:hover, .s-nav-2:hover, .s-nav-3:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 @keyframes slider-animation {
   0%,
     7% {
@@ -311,6 +348,13 @@ body {
 	margin-left: 20px;
 	overflow: hidden;
 	box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.game:hover {
+  width: 305px;
+  height: 355px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width:990px) {
@@ -340,7 +384,6 @@ body {
 
 .game-title h3 {
 	margin-top: -10px;
-	color:
 }
 
 .game-title p {
