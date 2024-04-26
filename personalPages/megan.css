@@ -1,5 +1,5 @@
 #pro-pic {
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 25px;
   }
   
@@ -61,6 +61,14 @@
     padding: 10px;
   }
   
+  #right h1, #mid h1, #left h1 {
+      padding-top: 30px;
+  }
+
+  #right img {
+    width: 300px;
+    border-radius: 25px;
+    }
   
   #resume, #linkedin, #personalsite,
   #contact-icon {
