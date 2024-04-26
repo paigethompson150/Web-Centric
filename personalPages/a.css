@@ -45,7 +45,7 @@ header {
   border-left: 2px solid purple;
 }
 .container.expanded {
-  height: 800px; /* Adjust the height as needed */
+    height: 800px; /* Adjust the height as needed */
 }
 
 #right, #mid, #left {
@@ -55,13 +55,14 @@ header {
   margin-top: 40px;
   padding: 10px;
 }
-
-
 #resume, #linkedin, #personalsite,
 #contact-icon {
   margin-bottom: 20px; /* Add some spacing between the elements */
 }
-
+#right img {
+  width: 300px;
+  border-radius: 25px;
+}
 html {
     font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -79,4 +80,6 @@ button {
     cursor: pointer;
     outline: none;
 }
+
+
 
